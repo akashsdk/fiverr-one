@@ -15,6 +15,11 @@
 .footerBox3{
     flex: 1;
 }
+.footerIcon{
+    margin-left: 10px;
+    color: #ffffff;
+    font-size: 20px;
+}
 
 @media only screen and (max-width: 1000px) {
     .footerBody{
