@@ -13,7 +13,9 @@
     background-color: rgb(116, 32, 250);
     width: 25%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     color: #fff;
 }
 .portfolio-Right{
@@ -30,4 +32,43 @@
 .portfolio-Box1-Line{
     height: 5px;
     background-color: rgb(116, 32, 250);
+}
+.portfolio-Left-Round1{
+    height: 180px;
+    width: 180px;
+    border-radius: 90px;
+    margin-left: 70px;
+    background-color: rgb(116, 32, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-Left-Round2{
+    height: 170px;
+    width: 170px;
+    border-radius: 85px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-Left-Round3{
+    height: 125px;
+    width: 125px;
+    border-radius: 62.5px;
+    background-color:  rgb(116, 32, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.portfolio-Left-Round4{
+    height: 115px;
+    width: 115px;
+    border-radius: 57.5px;
+    background-color:  rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
 }
