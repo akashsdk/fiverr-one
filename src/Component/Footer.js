@@ -1,6 +1,9 @@
 import React from "react";
 import "./Footer.css";
 
+import { Button } from "antd";
+import { Link } from "react-router-dom";
+
 import {
   TwitterOutlined,
   FacebookOutlined,
@@ -12,11 +15,16 @@ export default function Footer() {
     <div className="footerBody">
       <div className="footerBox1">Logo</div>
       <div className="footerBox2">
-        Home
-        About Us
-        Contact
-        Portfolio
-      Download CV
+      <Link className="footerBox2-Link" to="/" >Home</Link>
+      <Link className="footerBox2-Link" to="/About-Us" >About Us</Link>
+      <Link className="footerBox2-Link" to="/Contact" >Contact</Link>
+          
+        <Button className="footerBox2-Button" type="text" block>
+          Portfolio
+        </Button>
+        <Button className="footerBox2-Button" type="text" block>
+          Download CV
+        </Button>
       </div>
       <div className="footerBox3">
         <a

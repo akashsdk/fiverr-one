@@ -1,5 +1,5 @@
 .footerBody{
-    height: 75px;
+    height: 70px;
     width: 100%;
     background-color: rgb(116, 32, 250);
     display: flex;
@@ -7,20 +7,38 @@
     align-items: center;
 }
 .footerBox1{
-    flex: 1;
+    flex: 2;
     color: #ffffff;
 }
 .footerBox2{
-    flex: 3;
-    color: #ffffff;
+    flex: 2;
+    display: flex;
 }
 .footerBox3{
     flex: 1;
+}
+.footerBox2-Link{
+    flex: 1;
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+.footerBox2-Link:hover{
+    color: #00ff40;
+}
+.footerBox2-Button{
+    flex: 1;
+    color: #ffffff;
+    font-size: 16px;
 }
 .footerIcon{
     margin-left: 10px;
     color: #ffffff;
     font-size: 20px;
+}
+.footerIcon:hover{
+    color: #00ff40;
 }
 
 @media only screen and (max-width: 1000px) {
