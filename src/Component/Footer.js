@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Footer.css";
 
-import { Button } from "antd";
+import { Button, Drawer } from "antd";
 import { Link } from "react-router-dom";
 
 import {
@@ -13,47 +13,46 @@ import {
 import Portfolio from "../Screen/Portfolio";
 
 export default function Footer() {
-  const [showBox, setShowBox] = useState(true);
-
-  const handleClose = () => {
-    setShowBox(false);
+  const [open, setOpen] = useState(false);
+  const showDrawer = () => {
+    setOpen(true);
   };
-  const handleOpen = () => {
-    setShowBox(true);
-  };
-
-  const handleReload = () => {
-    setShowBox(true);
+  const onClose = () => {
+    setOpen(false);
   };
 
-  useEffect(() => {
-    window.addEventListener("beforeunload", handleReload);
-
-    return () => {
-      window.removeEventListener("beforeunload", handleReload);
-    };
-  }, []);
   return (
     <div className="footerBody">
-      {showBox && (
-        <div className="footer-showBox">
-          <div style={{ display: "flex" }}>
-            <div style={{ flex:'5' }}></div>
-            <div style={{ flex:'1' }}>
-              <Button
-              style={{backgroundColor:'transparent'}}
-                onClick={handleClose}
-                shape="circle"
-                icon={<CloseOutlined />}
-                danger
-              />
-            </div>
+      <Drawer
+        placement="bottom"
+        closable={false}
+        onClose={onClose}
+        open={open}
+        key="bottom"
+        height={"95vh"}
+        style={{
+          width: "60%",
+          marginLeft: "20%",
+        }}
+      >
+        <div>
+          <div className="footer-CloseBox">
+            <Button
+              style={{
+                backgroundColor: "transparent",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              onClick={onClose}
+              shape="circle"
+              icon={<CloseOutlined style={{ fontSize: "25px" }} />}
+              danger
+            />
           </div>
-          <div style={{ marginTop:'10px' }}>
             <Portfolio />
-          </div>
         </div>
-      )}
+      </Drawer>
       <div className="footerBox1">Logo</div>
       <div className="footerBox2">
         <Link className="footerBox2-Link" to="/">
@@ -68,7 +67,7 @@ export default function Footer() {
 
         <Button
           className="footerBox2-Button"
-          onClick={handleOpen}
+          onClick={showDrawer}
           type="text"
           block
         >

@@ -3,6 +3,10 @@ import '../Style/Portfolio.css';
 
 export default function Portfolio() {
   return (
-    <div>Portfolio</div>
+    <div className='portfolioBody'>
+        <div style={{
+            height:'200px'
+        }}>bbb</div>
+    </div>
   )
 }
