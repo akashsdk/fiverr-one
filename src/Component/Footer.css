@@ -8,9 +8,11 @@
 }
 .footerBox1{
     flex: 1;
+    color: #ffffff;
 }
 .footerBox2{
     flex: 3;
+    color: #ffffff;
 }
 .footerBox3{
     flex: 1;

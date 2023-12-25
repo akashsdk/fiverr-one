@@ -10,8 +10,14 @@ import {
 export default function Footer() {
   return (
     <div className="footerBody">
-      <div className="footerBox1">box1</div>
-      <div className="footerBox2">box2</div>
+      <div className="footerBox1">Logo</div>
+      <div className="footerBox2">
+        Home
+        About Us
+        Contact
+        Portfolio
+      Download CV
+      </div>
       <div className="footerBox3">
         <a
           style={{ textDecoration: "none" }}
