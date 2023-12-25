@@ -3,6 +3,6 @@ import '../Style/Contact.css';
 
 export default function Contact() {
   return (
-    <div>Contact</div>
+    <div className='contactBody'>Contact</div>
   )
 }
