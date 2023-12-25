@@ -43,10 +43,11 @@ export default function Footer() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
+                border:'none',
               }}
               onClick={onClose}
               shape="circle"
-              icon={<CloseOutlined style={{ fontSize: "25px" }} />}
+              icon={<CloseOutlined style={{ fontSize: "20px" }} />}
               danger
             />
           </div>

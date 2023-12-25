@@ -17,9 +17,15 @@
     color: #fff;
 }
 .portfolio-Right{
+    height: 280px;
     width: 75%;
     display: flex;
     justify-content: center;
+}
+.portfolio-RightButton{
+    margin-top: 10px;
+    margin-left: 180px;
+    background-color: rgb(116, 32, 250);
 }
 .portfolio-Box1-Line{
     height: 5px;

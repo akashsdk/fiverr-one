@@ -1,5 +1,8 @@
 import React from "react";
 import "../Style/Portfolio.css";
+import { DownloadOutlined } from '@ant-design/icons';
+import { Button,} from 'antd';
+
 
 export default function Portfolio() {
   return (
@@ -9,10 +12,12 @@ export default function Portfolio() {
           <h3>Portfolio</h3>
         </div>
         <div className="portfolio-Right">
-        <h3>Portfolio</h3>
+        <Button className="portfolio-RightButton" type="primary" shape="round" icon={<DownloadOutlined />}>
+            Download CV
+          </Button>
         </div>
       </div>
-      <div className="portfolio-Box1-Line"/>
+      <div className="portfolio-Box1-Line" />
 
       <div>bbb</div>
     </div>
