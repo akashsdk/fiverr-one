@@ -1,13 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import '../Style/Home.css';
-
+import React from "react";
+import "../Style/Home.css";
 
 export default function Home() {
-  
-
   return (
-    <div className='homeBody'>
-      <h1>home</h1>
+    <div className="homeBody">
+      <div className="home-box1">
+        <div className="home-box1-div">
+          <h2>Hello There! </h2>
+          <h2>I'm Tasnim Shahriar Akash</h2>
+        </div>
+      </div>
+      <div className="home-box2">box2</div>
     </div>
-  )
+  );
 }

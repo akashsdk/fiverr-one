@@ -1,8 +1,29 @@
-.homeBody{
-    height: auto;
-    width: 100%;
+.homeBody {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-box1 {
+  flex: 1;
+}
+.home-box2 {
+  flex: 1;
+  background-color: aqua;
+}
+.home-box1-div{
+    height: 300px;
+    width: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-direction: column;
+    background-color: rgb(116, 32, 250);
+    color: rgb(255, 255, 255);
 }
+
+
+@media only screen and (max-width: 1000px) {
+    
+  }
