@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import "./Footer.css";
 
 import { Button } from "antd";
@@ -8,7 +8,9 @@ import {
   TwitterOutlined,
   FacebookOutlined,
   LinkedinOutlined,
+  CloseOutlined,
 } from "@ant-design/icons";
+import Portfolio from "../Screen/Portfolio";
 
 export default function Footer() {
   const [showBox, setShowBox] = useState(true);
@@ -25,18 +27,31 @@ export default function Footer() {
   };
 
   useEffect(() => {
-    window.addEventListener('beforeunload', handleReload);
+    window.addEventListener("beforeunload", handleReload);
 
     return () => {
-      window.removeEventListener('beforeunload', handleReload);
+      window.removeEventListener("beforeunload", handleReload);
     };
   }, []);
   return (
     <div className="footerBody">
       {showBox && (
         <div className="footer-showBox">
-          <p>This is a closeable box.</p>
-          <button onClick={handleClose}>Close</button>
+          <div style={{ display: "flex" }}>
+            <div style={{ flex:'5' }}></div>
+            <div style={{ flex:'1' }}>
+              <Button
+              style={{backgroundColor:'transparent'}}
+                onClick={handleClose}
+                shape="circle"
+                icon={<CloseOutlined />}
+                danger
+              />
+            </div>
+          </div>
+          <div style={{ marginTop:'10px' }}>
+            <Portfolio />
+          </div>
         </div>
       )}
       <div className="footerBox1">Logo</div>

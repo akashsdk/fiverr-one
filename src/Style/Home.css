@@ -7,12 +7,17 @@
 }
 .home-box1 {
   flex: 1;
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: flex-start;
 }
 .home-box2 {
   flex: 1;
+  height: calc(100vh - 70px);
   background-color: aqua;
 }
 .home-box1-div{
+    
     height: 300px;
     width: 85%;
     display: flex;

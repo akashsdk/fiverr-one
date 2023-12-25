@@ -8,6 +8,7 @@ import AboutUs from "./Screen/AboutUs.js";
 import Contact from './Screen/Contact.js';
 import Footer from "./Component/Footer.js";
 import Header from './Component/Header.js';
+import Portfolio from "./Screen/Portfolio.js";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/About-Us" element={<AboutUs />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/Portfolio" element={<Portfolio />} />
         </Routes>
         <Footer/>
       </div>

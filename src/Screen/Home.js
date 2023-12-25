@@ -7,7 +7,7 @@ export default function Home() {
       <div className="home-box1">
         <div className="home-box1-div">
           <h2>Hello There! </h2>
-          <h2>I'm Tasnim Shahriar Akash</h2>
+          <h2 style={{marginTop:'0px'}}>I'm Tasnim Shahriar Akash</h2>
         </div>
       </div>
       <div className="home-box2">box2</div>
