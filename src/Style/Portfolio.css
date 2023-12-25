@@ -1,3 +1,27 @@
 .portfolioBody{
     
 }
+.portfolio-Box1{
+    height: 280px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-Left{
+    height: 280px;
+    background-color: rgb(116, 32, 250);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.portfolio-Right{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+.portfolio-Box1-Line{
+    height: 5px;
+    background-color: rgb(116, 32, 250);
+}
