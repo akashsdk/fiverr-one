@@ -1,0 +1,23 @@
+.footerBody{
+    height: 75px;
+    width: 100%;
+    background-color: rgb(116, 32, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerBox1{
+    flex: 1;
+}
+.footerBox2{
+    flex: 3;
+}
+.footerBox3{
+    flex: 1;
+}
+
+@media only screen and (max-width: 1000px) {
+    .footerBody{
+        display: none;
+    }
+  }
