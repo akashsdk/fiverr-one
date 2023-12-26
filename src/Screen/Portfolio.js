@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Style/Portfolio.css";
 
 import { Button } from "antd";
@@ -18,8 +18,6 @@ import {
 import PortfolioCart from "../Cart/PortfolioCart";
 
 export default function Portfolio() {
-  const [page, setPage] = useState(1);
-
   return (
     <div className="portfolioBody">
       {/* Top Box */}
@@ -84,38 +82,30 @@ export default function Portfolio() {
       </div>
       <div className="portfolio-Box1-Line" />
       {/* Down Box */}
-      
-      <div>
-        {page === 1 ? (
-          <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: "50px",
-          }}
-        >
-          <PortfolioCart
-            img={OnTime}
-            fastText="On Time"
-            scendText="client Satisfaction client Satisfactionclient Satisfaction..."
-          />
-          <PortfolioCart
-            img={work}
-            fastText="Clean Work"
-            scendText="client Satisfaction client Satisfactionclient Satisfaction..."
-          />
-          <PortfolioCart
-            img={Review}
-            fastText="Client Satisfaction"
-            scendText="client Satisfaction client Satisfactionclient Satisfaction..."
-          />
-        </div>
-        ) : page === 2 ? (
-          <div>All</div>
-        ) : (
-          <h1> Error page</h1>
-        )}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: "50px",
+        }}
+      >
+        
+        <PortfolioCart
+          img={OnTime}
+          fastText="On Time"
+          scendText="client Satisfaction client Satisfactionclient Satisfaction..."
+        />
+        <PortfolioCart
+          img={work}
+          fastText="Clean Work"
+          scendText="client Satisfaction client Satisfactionclient Satisfaction..."
+        />
+        <PortfolioCart
+          img={Review}
+          fastText="Client Satisfaction"
+          scendText="client Satisfaction client Satisfactionclient Satisfaction..."
+        />
       </div>
     </div>
   );
