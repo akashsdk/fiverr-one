@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Style/Portfolio.css";
-import { DownloadOutlined } from "@ant-design/icons";
+
 import { Button } from "antd";
 
 import Line from "../Img/—Pngtree—blue wavy shapes curved lines_3550280.png";
+import OnTime from "../Img/on-time.png";
+import Review from "../Img/review.png";
+import work from "../Img/workplace.png";
 
 import {
+  DownloadOutlined,
   TwitterOutlined,
   FacebookOutlined,
   LinkedinOutlined,
@@ -14,6 +18,8 @@ import {
 import PortfolioCart from "../Cart/PortfolioCart";
 
 export default function Portfolio() {
+  const [page, setPage] = useState(1);
+
   return (
     <div className="portfolioBody">
       {/* Top Box */}
@@ -78,16 +84,38 @@ export default function Portfolio() {
       </div>
       <div className="portfolio-Box1-Line" />
       {/* Down Box */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <PortfolioCart />
-        <PortfolioCart />
-        <PortfolioCart />
+      
+      <div>
+        {page === 1 ? (
+          <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "50px",
+          }}
+        >
+          <PortfolioCart
+            img={OnTime}
+            fastText="On Time"
+            scendText="client Satisfaction client Satisfactionclient Satisfaction..."
+          />
+          <PortfolioCart
+            img={work}
+            fastText="Clean Work"
+            scendText="client Satisfaction client Satisfactionclient Satisfaction..."
+          />
+          <PortfolioCart
+            img={Review}
+            fastText="Client Satisfaction"
+            scendText="client Satisfaction client Satisfactionclient Satisfaction..."
+          />
+        </div>
+        ) : page === 2 ? (
+          <div>All</div>
+        ) : (
+          <h1> Error page</h1>
+        )}
       </div>
     </div>
   );
