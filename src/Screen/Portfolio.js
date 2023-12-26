@@ -3,6 +3,8 @@ import "../Style/Portfolio.css";
 import { DownloadOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 
+import Line from '../Img/—Pngtree—blue wavy shapes curved lines_3550280.png';
+
 export default function Portfolio() {
   return (
     <div className="portfolioBody">
@@ -27,6 +29,18 @@ export default function Portfolio() {
           >
             Download CV
           </Button>
+          <div className="portfolio-RightTextDiv">
+            <div style={{ display: "flex" }}>
+              <p className="portfolio-RightText1">My</p>
+              <p className="portfolio-RightText2">Work</p>
+            </div>
+            <p className="portfolio-RightText3">Web & visual Designer</p>
+          </div>
+          <div style={{display:'flex', marginTop:'-10px'}}>
+            <img className="portfolio-RightImgLine" src={Line} alt=""/>
+            <img className="portfolio-RightImgLine2" src={Line} alt=""/>
+          </div>
+
         </div>
       </div>
       <div className="portfolio-Box1-Line" />

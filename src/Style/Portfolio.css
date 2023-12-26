@@ -23,10 +23,13 @@
     width: 75%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 .portfolio-RightButton{
-    margin-top: 10px;
-    margin-left: 180px;
+    margin-top: -80px;
+    margin-left: 250px;
     background-color: rgb(116, 32, 250);
 }
 .portfolio-Box1-Line{
@@ -60,7 +63,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .portfolio-Left-Round4{
     height: 115px;
@@ -71,4 +73,34 @@
     justify-content: center;
     align-items: center;
     color: black;
+}
+.portfolio-RightTextDiv{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.portfolio-RightText1{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+.portfolio-RightText2{
+    font-size: 50px;
+    color: rgb(116, 32, 250);
+}
+.portfolio-RightText3{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin-top: -45px;
+
+}
+.portfolio-RightImgLine{
+    height: 50px;
+    width: 80px;
+}
+.portfolio-RightImgLine2{
+    height: 50px;
+    width: 80px;
+    margin-left: 10px;
 }
