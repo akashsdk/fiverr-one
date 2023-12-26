@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect  } from "react";
 import "./Footer.css";
 
 import { Button, Drawer } from "antd";
@@ -20,6 +20,22 @@ export default function Footer() {
   const onClose = () => {
     setOpen(false);
   };
+
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      const windowWidth = window.innerWidth;
+      if (windowWidth <= 1000 && windowWidth > 0) {
+        setOpen(false);
+      } 
+    };
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
 
   return (
     <div className="footerBody">
