@@ -5,9 +5,15 @@ import { Button } from "antd";
 
 import Line from '../Img/—Pngtree—blue wavy shapes curved lines_3550280.png';
 
+import {
+  TwitterOutlined,
+  FacebookOutlined,
+  LinkedinOutlined,
+} from "@ant-design/icons";
 export default function Portfolio() {
   return (
     <div className="portfolioBody">
+      {/* Top Box */}
       <div className="portfolio-Box1">
         <div className="portfolio-Left">
           <h3>Portfolio</h3>
@@ -39,6 +45,31 @@ export default function Portfolio() {
           <div style={{display:'flex', marginTop:'-10px'}}>
             <img className="portfolio-RightImgLine" src={Line} alt=""/>
             <img className="portfolio-RightImgLine2" src={Line} alt=""/>
+          </div>
+          <div className="portfolio-RightDownBox">
+            <p className="portfolio-RightDownText">follow me:</p>
+            <div className="portfolio-RightDownLine" />
+            <a
+          style={{ textDecoration: "none" }}
+          href="https://www.google.com/"
+          target="_blank"
+        >
+          <TwitterOutlined className="portfolio-RightDownIcon" />
+        </a>
+        <a
+          style={{ textDecoration: "none" }}
+          href="https://www.google.com/"
+          target="_blank"
+        >
+          <FacebookOutlined className="portfolio-RightDownIcon" />
+        </a>
+        <a
+          style={{ textDecoration: "none" }}
+          href="https://www.google.com/"
+          target="_blank"
+        >
+          <LinkedinOutlined className="portfolio-RightDownIcon" />
+        </a>
           </div>
 
         </div>

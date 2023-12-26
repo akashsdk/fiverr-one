@@ -28,7 +28,7 @@
 
 }
 .portfolio-RightButton{
-    margin-top: -80px;
+    margin-top: 0px;
     margin-left: 250px;
     background-color: rgb(116, 32, 250);
 }
@@ -103,4 +103,31 @@
     height: 50px;
     width: 80px;
     margin-left: 10px;
+}
+.portfolio-RightDownBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-RightDownText{
+    opacity: .6;
+    margin-top: 10px;
+    color: rgb(116, 32, 250);
+}
+.portfolio-RightDownLine{
+    opacity: .6;
+    height: 2px;
+    width: 30px;
+    background-color: rgb(116, 32, 250);
+    margin-left: 5px;
+
+}
+
+.portfolio-RightDownIcon{
+    opacity: .6;
+    color: rgb(116, 32, 250);
+    margin-left: 5px;
+}
+.portfolio-RightDownIcon:hover{
+    color: #000000;
 }
