@@ -3,13 +3,16 @@ import "../Style/Portfolio.css";
 import { DownloadOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 
-import Line from '../Img/—Pngtree—blue wavy shapes curved lines_3550280.png';
+import Line from "../Img/—Pngtree—blue wavy shapes curved lines_3550280.png";
 
 import {
   TwitterOutlined,
   FacebookOutlined,
   LinkedinOutlined,
 } from "@ant-design/icons";
+
+import PortfolioCart from "../Cart/PortfolioCart";
+
 export default function Portfolio() {
   return (
     <div className="portfolioBody">
@@ -42,41 +45,50 @@ export default function Portfolio() {
             </div>
             <p className="portfolio-RightText3">Web & visual Designer</p>
           </div>
-          <div style={{display:'flex', marginTop:'-10px'}}>
-            <img className="portfolio-RightImgLine" src={Line} alt=""/>
-            <img className="portfolio-RightImgLine2" src={Line} alt=""/>
+          <div style={{ display: "flex", marginTop: "-10px" }}>
+            <img className="portfolio-RightImgLine" src={Line} alt="" />
+            <img className="portfolio-RightImgLine2" src={Line} alt="" />
           </div>
           <div className="portfolio-RightDownBox">
             <p className="portfolio-RightDownText">follow me:</p>
             <div className="portfolio-RightDownLine" />
             <a
-          style={{ textDecoration: "none" }}
-          href="https://www.google.com/"
-          target="_blank"
-        >
-          <TwitterOutlined className="portfolio-RightDownIcon" />
-        </a>
-        <a
-          style={{ textDecoration: "none" }}
-          href="https://www.google.com/"
-          target="_blank"
-        >
-          <FacebookOutlined className="portfolio-RightDownIcon" />
-        </a>
-        <a
-          style={{ textDecoration: "none" }}
-          href="https://www.google.com/"
-          target="_blank"
-        >
-          <LinkedinOutlined className="portfolio-RightDownIcon" />
-        </a>
+              style={{ textDecoration: "none" }}
+              href="https://www.google.com/"
+              target="_blank"
+            >
+              <TwitterOutlined className="portfolio-RightDownIcon" />
+            </a>
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://www.google.com/"
+              target="_blank"
+            >
+              <FacebookOutlined className="portfolio-RightDownIcon" />
+            </a>
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://www.google.com/"
+              target="_blank"
+            >
+              <LinkedinOutlined className="portfolio-RightDownIcon" />
+            </a>
           </div>
-
         </div>
       </div>
       <div className="portfolio-Box1-Line" />
-
-      <div>bbb</div>
+      {/* Down Box */}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <PortfolioCart />
+        <PortfolioCart />
+        <PortfolioCart />
+      </div>
     </div>
   );
 }
