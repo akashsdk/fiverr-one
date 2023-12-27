@@ -8,7 +8,7 @@ export default function Home() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveBox((prevBox) => (prevBox % 3) + 1); 
+      setActiveBox((prevBox) => (prevBox % 3) + 1);
     }, 7000); // Change box after every 5 seconds
 
     return () => clearInterval(interval);
@@ -26,11 +26,20 @@ export default function Home() {
         </div>
         <div className="home-box1D">
           <p className="home-box2-1-MainText">BIOGRAPHY</p>
-          <div className="home-box1D-line"/>
+          <div className="home-box1D-line" />
+          <p className="home-box1D-Text">
+            Am a person who is positive about every aspect of life. There are
+            many things I like to do, to see, and to experience. I like to read,
+            I like to write; I like to think, I like to dream; I like to talk, I
+            like to listen. I like to smell the wind coming from the ocean. I
+            like to look at the clouds in the sky with a blank mind, I like to
+            do thought experiment when I cannot sleep in the middle of the
+            night.
+          </p>
         </div>
       </div>
       <div className="home-box2">
-        <div style={{height:'50px'}}/>
+        <div style={{ height: "50px" }} />
         <div className="df">
           <Image
             width={120}
@@ -70,7 +79,7 @@ export default function Home() {
               <div className="HomeSlid-box3" />
             </div>
             <div className={`home-box ${activeBox === 2 ? "active" : ""}`}>
-            <div className="HomeSlid-box2">
+              <div className="HomeSlid-box2">
                 <img
                   className="HomeSlid-box2-img"
                   src="https://assets-global.website-files.com/6410ebf8e483b5bb2c86eb27/6410ebf8e483b53d6186fc53_ABM%20College%20Web%20developer%20main.jpg"
@@ -78,15 +87,13 @@ export default function Home() {
                 />
                 <p className="HomeSlid-box2-Text1">Text1</p>
                 <div style={{ margin: "20px", marginTop: "-25px" }}>
-                  <p className="HomeSlid-box2-Text">
-                    Text2
-                  </p>
+                  <p className="HomeSlid-box2-Text">Text2</p>
                 </div>
               </div>
               <div className="HomeSlid-box3" />
             </div>
             <div className={`home-box ${activeBox === 3 ? "active" : ""}`}>
-            <div className="HomeSlid-box2">
+              <div className="HomeSlid-box2">
                 <img
                   className="HomeSlid-box2-img"
                   src="https://uploads-ssl.webflow.com/615af81f65d1ab72d2969269/62efdf9840dca733692cdd48_web%20dev%20basics.jpg"
@@ -94,9 +101,7 @@ export default function Home() {
                 />
                 <p className="HomeSlid-box2-Text1">Text1</p>
                 <div style={{ margin: "20px", marginTop: "-25px" }}>
-                  <p className="HomeSlid-box2-Text">
-                    Text2
-                    </p>
+                  <p className="HomeSlid-box2-Text">Text2</p>
                 </div>
               </div>
               <div className="HomeSlid-box3" />

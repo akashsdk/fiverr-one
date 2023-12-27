@@ -25,6 +25,10 @@
   opacity: .6;
   background-color: rgb(116, 32, 250);
 }
+.home-box1D-Text{
+  opacity: .6;
+  text-align: center;
+}
 .home-box2 {
   flex: 1;
   height: calc(100vh - 70px);
