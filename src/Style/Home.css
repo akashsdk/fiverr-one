@@ -25,35 +25,92 @@
   background-color: rgb(116, 32, 250);
   color: rgb(255, 255, 255);
 }
-.home-box2-1{
-  height: 400px;
+.home-box2-1 {
+  height: auto;
+  width: 100%;
 }
 
-
-
-
-.sliding-box-container {
+.home-sliding-box-container {
+  height: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.box {
-  width: 200px;
-  height: 200px;
+.home-box {
+  width: 95%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
-  background-color: lightblue;
-  transition: transform 15.0ms ease-in-out;
+  transition: transform 15ms ease-in-out;
   display: none;
 }
 
-.box.active {
+.home-box.active {
   display: block;
+  width: 95%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
 
-.active-button {
-  background-color: red;
-  color: white;
+.HomeSlid-box2{
+  width: 90%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.HomeSlid-box2-img{
+  height: 100px;
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.HomeSlid-box2-Text1{
+  font-size: 20px;
+}
+.HomeSlid-box2-Text{
+  opacity: .6;
+  text-align: center;
+}
+.HomeSlid-box3{
+  height: 260px;
+  width: 15px;
+  background-color: rgb(116, 32, 250);
+  border-radius: 3px;
+}
+.home-active-button {
+  background-color: rgb(116, 32, 250);
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  margin-left: 5px;
+  border: none;
+}
+.home-active-button:hover {
+  border: 0.5px solid red;
+}
+
+.home-deactive-button {
+  background-color: rgb(255, 255, 255);
+  height: 10px;
+  width: 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+
+  border: 0.5px solid rgb(116, 32, 250);
+}
+.home-deactive-button:hover {
+  border: 0.5px solid red;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -71,6 +128,5 @@
   .home-box1-div {
     height: 200px;
     width: 100%;
-    
   }
 }

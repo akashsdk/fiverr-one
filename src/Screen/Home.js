@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../Style/Home.css";
 
-import { Image } from "antd";
+import { Image, Button } from "antd";
 
 export default function Home() {
   const [activeBox, setActiveBox] = useState(1);
@@ -45,36 +45,82 @@ export default function Home() {
 
         <div className="home-box2-1">
           <p>SERVICES </p>
-          <p>What I Do, For You!</p>
-          <div className="sliding-box-container">
-            <div className={`box ${activeBox === 1 ? "active" : ""}`}>
-              Box 1
+          <div className="home-sliding-box-container">
+            <div className={`home-box ${activeBox === 1 ? "active" : ""}`}>
+              <div className="HomeSlid-box2">
+                <img
+                  className="HomeSlid-box2-img"
+                  src="https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg"
+                  alt=""
+                />
+                <p className="HomeSlid-box2-Text1">What I Do, For You!</p>
+                <div style={{ margin: "20px", marginTop: "-25px" }}>
+                  <p className="HomeSlid-box2-Text">
+                    I help ambitious businesses like yours generate more profits
+                    by building awareness, driving web traffic, connecting with
+                    customers and growing overall sales.
+                  </p>
+                </div>
+              </div>
+              <div className="HomeSlid-box3" />
             </div>
-            <div className={`box ${activeBox === 2 ? "active" : ""}`}>
-              Box 2
+            <div className={`home-box ${activeBox === 2 ? "active" : ""}`}>
+            <div className="HomeSlid-box2">
+                <img
+                  className="HomeSlid-box2-img"
+                  src="https://assets-global.website-files.com/6410ebf8e483b5bb2c86eb27/6410ebf8e483b53d6186fc53_ABM%20College%20Web%20developer%20main.jpg"
+                  alt=""
+                />
+                <p className="HomeSlid-box2-Text1">Text1</p>
+                <div style={{ margin: "20px", marginTop: "-25px" }}>
+                  <p className="HomeSlid-box2-Text">
+                    Text2
+                  </p>
+                </div>
+              </div>
+              <div className="HomeSlid-box3" />
             </div>
-            <div className={`box ${activeBox === 3 ? "active" : ""}`}>
-              Box 3
+            <div className={`home-box ${activeBox === 3 ? "active" : ""}`}>
+            <div className="HomeSlid-box2">
+                <img
+                  className="HomeSlid-box2-img"
+                  src="https://uploads-ssl.webflow.com/615af81f65d1ab72d2969269/62efdf9840dca733692cdd48_web%20dev%20basics.jpg"
+                  alt=""
+                />
+                <p className="HomeSlid-box2-Text1">Text1</p>
+                <div style={{ margin: "20px", marginTop: "-25px" }}>
+                  <p className="HomeSlid-box2-Text">
+                    Text2
+                    </p>
+                </div>
+              </div>
+              <div className="HomeSlid-box3" />
             </div>
-            <div className="buttons">
+            <div className="home-buttons">
               <button
                 onClick={() => handleBoxChange(1)}
-                className={activeBox === 1 ? "active-button" : ""}
-              >
-                Button 1
-              </button>
+                className={
+                  activeBox === 1
+                    ? "home-active-button"
+                    : "home-deactive-button"
+                }
+              ></button>
               <button
                 onClick={() => handleBoxChange(2)}
-                className={activeBox === 2 ? "active-button" : ""}
-              >
-                Button 2
-              </button>
+                className={
+                  activeBox === 2
+                    ? "home-active-button"
+                    : "home-deactive-button"
+                }
+              ></button>
               <button
                 onClick={() => handleBoxChange(3)}
-                className={activeBox === 3 ? "active-button" : ""}
-              >
-                Button 3
-              </button>
+                className={
+                  activeBox === 3
+                    ? "home-active-button"
+                    : "home-deactive-button"
+                }
+              ></button>
             </div>
           </div>
         </div>
