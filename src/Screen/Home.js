@@ -8,8 +8,8 @@ export default function Home() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveBox((prevBox) => (prevBox % 3) + 1); // Cycle through boxes 1, 2, 3
-    }, 5000); // Change box after every 5 seconds
+      setActiveBox((prevBox) => (prevBox % 3) + 1); 
+    }, 7000); // Change box after every 5 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -24,8 +24,13 @@ export default function Home() {
           <h2>Hello There! </h2>
           <h2 style={{ marginTop: "0px" }}>I'm Tasnim Shahriar Akash</h2>
         </div>
+        <div className="home-box1D">
+          <p className="home-box2-1-MainText">BIOGRAPHY</p>
+          <div className="home-box1D-line"/>
+        </div>
       </div>
       <div className="home-box2">
+        <div style={{height:'50px'}}/>
         <div className="df">
           <Image
             width={120}
@@ -44,7 +49,7 @@ export default function Home() {
         </div>
 
         <div className="home-box2-1">
-          <p>SERVICES </p>
+          <p className="home-box2-1-MainText">SERVICES </p>
           <div className="home-sliding-box-container">
             <div className={`home-box ${activeBox === 1 ? "active" : ""}`}>
               <div className="HomeSlid-box2">

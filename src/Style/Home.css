@@ -10,13 +10,33 @@
   height: calc(100vh - 70px);
   display: flex;
   align-items: flex-start;
+  flex-direction: column;
+}
+.home-box1D{
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home-box1D-line{
+  height: 1.5px;
+  width: 150px;
+  opacity: .6;
+  background-color: rgb(116, 32, 250);
 }
 .home-box2 {
   flex: 1;
   height: calc(100vh - 70px);
 }
+.home-box2-1-MainText{
+  font-size: 30px;
+  color: rgb(116, 32, 250);
+  margin-bottom: 0px;
+  font-family: 'Arial Narrow Bold';
+}
 .home-box1-div {
-  height: 350px;
+  height: 310px;
   width: 85%;
   display: flex;
   justify-content: center;
@@ -127,6 +147,10 @@
   }
   .home-box1-div {
     height: 200px;
+    width: 100%;
+  }
+  .home-box1D{
+    height: 300px;
     width: 100%;
   }
 }

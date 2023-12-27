@@ -45,7 +45,7 @@ export default function Footer() {
         onClose={onClose}
         open={open}
         key="bottom"
-        height={"95vh"}
+        height={"100vh"}
         style={{
           width: "60%",
           marginLeft: "20%",
