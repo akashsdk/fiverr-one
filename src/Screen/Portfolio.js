@@ -1,12 +1,13 @@
 import React from "react";
 import "../Style/Portfolio.css";
 
-import { Button } from "antd";
+import { Button, Image } from "antd";
 
 import Line from "../Img/—Pngtree—blue wavy shapes curved lines_3550280.png";
 import OnTime from "../Img/on-time.png";
 import Review from "../Img/review.png";
 import work from "../Img/workplace.png";
+import ProfileImg from "../Img/Profile.jpg";
 
 import {
   DownloadOutlined,
@@ -27,7 +28,15 @@ export default function Portfolio() {
           <div className="portfolio-Left-Round1">
             <div className="portfolio-Left-Round2">
               <div className="portfolio-Left-Round3">
-                <div className="portfolio-Left-Round4"> img</div>
+                <div className="portfolio-Left-Round4">
+                  <Image
+                    width={200}
+                    style={{
+                      borderRadius: "100px",
+                    }}
+                    src={ProfileImg}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -90,7 +99,6 @@ export default function Portfolio() {
           marginTop: "50px",
         }}
       >
-        
         <PortfolioCart
           img={OnTime}
           fastText="On Time"
