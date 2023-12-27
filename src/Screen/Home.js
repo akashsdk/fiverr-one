@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../Style/Home.css";
 
-import { Image, Button } from "antd";
+import { Image, Button, Radio, Drawer } from "antd";
+
+import {CloseOutlined} from "@ant-design/icons";
 
 export default function Home() {
   const [activeBox, setActiveBox] = useState(1);
@@ -17,6 +19,31 @@ export default function Home() {
   const handleBoxChange = (boxNumber) => {
     setActiveBox(boxNumber);
   };
+
+  const [open, setOpen] = useState(false);
+  const showDrawer = () => {
+    setOpen(true);
+  };
+  const onClose = () => {
+    setOpen(false);
+  };
+
+  const [open2, setOpen2] = useState(false);
+  const showDrawer2 = () => {
+    setOpen2(true);
+  };
+  const onClose2 = () => {
+    setOpen2(false);
+  };
+
+  const [open3, setOpen3] = useState(false);
+  const showDrawer3 = () => {
+    setOpen3(true);
+  };
+  const onClose3 = () => {
+    setOpen3(false);
+  };
+
   return (
     <div className="homeBody">
       <div className="home-box1">
@@ -36,6 +63,116 @@ export default function Home() {
             do thought experiment when I cannot sleep in the middle of the
             night.
           </p>
+          <div>
+            <Radio.Group size="large" style={{marginTop:'25px'}}>
+              <Radio.Button value="large" onClick={showDrawer} style={{color:'rgb(116, 32, 250)', borderColor:'rgb(116, 32, 250)'}}>
+              Education
+              </Radio.Button>
+              <Radio.Button value="default" onClick={showDrawer2} style={{color:'rgb(116, 32, 250)', borderColor:'rgb(116, 32, 250)'}}>Skills</Radio.Button>
+              <Radio.Button value="small" onClick={showDrawer3} style={{color:'rgb(116, 32, 250)', borderColor:'rgb(116, 32, 250)'}}> Experience</Radio.Button>
+            </Radio.Group>
+          </div>
+          <Drawer
+            placement="left"
+            closable={false}
+            onClose={onClose}
+            open={open}
+            key="left"
+            width={'90%'}
+            style={{
+              marginLeft:'5%',
+              borderRadius:'20px',
+              height:'90vh',
+              marginTop:'5vh'
+            }}
+          >
+            <div>
+            <Button
+              style={{
+                backgroundColor: "transparent",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                border:'none',
+              }}
+              onClick={onClose}
+              shape="circle"
+              icon={<CloseOutlined style={{ fontSize: "20px" }} />}
+              danger
+            />
+            </div>
+            <p>Education</p>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+          </Drawer>
+
+          <Drawer
+            placement="left"
+            closable={false}
+            onClose={onClose2}
+            open={open2}
+            key="left"
+            width={'90%'}
+            style={{
+              marginLeft:'5%',
+              borderRadius:'20px',
+              height:'90vh',
+              marginTop:'5vh'
+            }}
+          >
+            <div>
+            <Button
+              style={{
+                backgroundColor: "transparent",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                border:'none',
+              }}
+              onClick={onClose2}
+              shape="circle"
+              icon={<CloseOutlined style={{ fontSize: "20px" }} />}
+              danger
+            />
+            </div>
+            <p>Skills</p>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+          </Drawer>
+
+          <Drawer
+            placement="left"
+            closable={false}
+            onClose={onClose3}
+            open={open3}
+            key="left"
+            width={'90%'}
+            style={{
+              marginLeft:'5%',
+              borderRadius:'20px',
+              height:'90vh',
+              marginTop:'5vh'
+            }}
+          >
+            <div>
+            <Button
+              style={{
+                backgroundColor: "transparent",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                border:'none',
+              }}
+              onClick={onClose3}
+              shape="circle"
+              icon={<CloseOutlined style={{ fontSize: "20px" }} />}
+              danger
+            />
+            </div>
+            <p>Experience</p>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+          </Drawer>
         </div>
       </div>
       <div className="home-box2">
