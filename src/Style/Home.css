@@ -121,6 +121,7 @@
   border-radius: 5px;
   margin-left: 5px;
   border: none;
+  border: 0.5px solid rgb(116, 32, 250);
 }
 .home-active-button:hover {
   border: 0.5px solid red;
@@ -132,7 +133,6 @@
   width: 10px;
   margin-left: 5px;
   border-radius: 5px;
-
   border: 0.5px solid rgb(116, 32, 250);
 }
 .home-deactive-button:hover {

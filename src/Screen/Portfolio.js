@@ -96,7 +96,8 @@ export default function Portfolio() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: "50px",
+          marginTop: "15px",
+          marginBottom:'15px',
         }}
       >
         <PortfolioCart
@@ -115,6 +116,20 @@ export default function Portfolio() {
           scendText="client Satisfaction client Satisfactionclient Satisfaction..."
         />
       </div>
+      <footer className="footer">
+          
+          <Button
+            type="link"
+            href="https://my-portfolio-d43ec.web.app/"
+            target="_blank"
+          >
+            <p className="footer-p">
+            &copy; {new Date().getFullYear()} Tasnim Shahriar Akash | All rights
+            reserved | Feedback
+            
+          </p>
+          </Button>
+      </footer>
     </div>
   );
 }

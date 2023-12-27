@@ -1,133 +1,147 @@
-.portfolioBody{
-    
+.portfolioBody {
 }
-.portfolio-Box1{
-    height: 280px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.portfolio-Box1 {
+  height: 280px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.portfolio-Left{
-    height: 280px;
-    background-color: rgb(116, 32, 250);
-    width: 25%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;
+.portfolio-Left {
+  height: 280px;
+  background-color: rgb(116, 32, 250);
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
 }
-.portfolio-Right{
-    height: 280px;
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
+.portfolio-Right {
+  height: 280px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.portfolio-RightButton{
-    margin-top: 0px;
-    margin-left: 250px;
-    background-color: rgb(116, 32, 250);
+.portfolio-RightButton {
+  margin-top: 0px;
+  margin-left: 250px;
+  background-color: rgb(116, 32, 250);
 }
-.portfolio-Box1-Line{
-    height: 5px;
-    background-color: rgb(116, 32, 250);
+.portfolio-Box1-Line {
+  height: 5px;
+  background-color: rgb(116, 32, 250);
 }
-.portfolio-Left-Round1{
-    height: 180px;
-    width: 180px;
-    border-radius: 90px;
-    margin-left: 70px;
-    background-color: rgb(116, 32, 250);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.portfolio-Left-Round1 {
+  height: 180px;
+  width: 180px;
+  border-radius: 90px;
+  margin-left: 70px;
+  background-color: rgb(116, 32, 250);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.portfolio-Left-Round2{
-    height: 170px;
-    width: 170px;
-    border-radius: 85px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.portfolio-Left-Round2 {
+  height: 170px;
+  width: 170px;
+  border-radius: 85px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.portfolio-Left-Round3{
-    height: 125px;
-    width: 125px;
-    border-radius: 62.5px;
-    background-color:  rgb(116, 32, 250);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.portfolio-Left-Round3 {
+  height: 125px;
+  width: 125px;
+  border-radius: 62.5px;
+  background-color: rgb(116, 32, 250);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.portfolio-Left-Round4{
-    height: 115px;
-    width: 115px;
-    border-radius: 57.5px;
-    background-color:  rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
+.portfolio-Left-Round4 {
+  height: 115px;
+  width: 115px;
+  border-radius: 57.5px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
-.portfolio-RightTextDiv{
-    width: 70%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+.portfolio-RightTextDiv {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
-.portfolio-RightText1{
-    font-size: 50px;
-    color: rgb(0, 0, 0);
+.portfolio-RightText1 {
+  font-size: 50px;
+  color: rgb(0, 0, 0);
 }
-.portfolio-RightText2{
-    font-size: 50px;
-    color: rgb(116, 32, 250);
+.portfolio-RightText2 {
+  font-size: 50px;
+  color: rgb(116, 32, 250);
 }
-.portfolio-RightText3{
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-    margin-top: -45px;
-
+.portfolio-RightText3 {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin-top: -45px;
 }
-.portfolio-RightImgLine{
-    height: 50px;
-    width: 80px;
+.portfolio-RightImgLine {
+  height: 50px;
+  width: 80px;
 }
-.portfolio-RightImgLine2{
-    height: 50px;
-    width: 80px;
-    margin-left: 10px;
+.portfolio-RightImgLine2 {
+  height: 50px;
+  width: 80px;
+  margin-left: 10px;
 }
-.portfolio-RightDownBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.portfolio-RightDownBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.portfolio-RightDownText{
-    opacity: .6;
-    margin-top: 10px;
-    color: rgb(116, 32, 250);
+.portfolio-RightDownText {
+  opacity: 0.6;
+  margin-top: 10px;
+  color: rgb(116, 32, 250);
 }
-.portfolio-RightDownLine{
-    opacity: .6;
-    height: 2px;
-    width: 30px;
-    background-color: rgb(116, 32, 250);
-    margin-left: 5px;
-
+.portfolio-RightDownLine {
+  opacity: 0.6;
+  height: 2px;
+  width: 30px;
+  background-color: rgb(116, 32, 250);
+  margin-left: 5px;
 }
 
-.portfolio-RightDownIcon{
-    opacity: .6;
-    color: rgb(116, 32, 250);
-    margin-left: 5px;
+.portfolio-RightDownIcon {
+  opacity: 0.6;
+  color: rgb(116, 32, 250);
+  margin-left: 5px;
 }
-.portfolio-RightDownIcon:hover{
-    color: #000000;
+.portfolio-RightDownIcon:hover {
+  color: #000000;
+}
+
+.footer {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(116, 32, 250);
+  color: #fff;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-p {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
 }
