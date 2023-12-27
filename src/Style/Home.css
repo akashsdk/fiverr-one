@@ -14,21 +14,37 @@
 .home-box2 {
   flex: 1;
   height: calc(100vh - 70px);
+}
+.home-box1-div {
+  height: 350px;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(116, 32, 250);
+  color: rgb(255, 255, 255);
+}
+.home-box2-1{
   background-color: aqua;
+  height: 400px;
 }
-.home-box1-div{
-    
-    height: 350px;
-    width: 85%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(116, 32, 250);
-    color: rgb(255, 255, 255);
-}
-
 
 @media only screen and (max-width: 1000px) {
+  .homeBody {
+    flex-direction: column;
+  }
+  .home-box1 {
+    height: auto;
+    width: 100%;
+  }
+  .home-box2 {
+    height: auto;
+    width: 100%;
+  }
+  .home-box1-div {
+    height: 200px;
+    width: 100%;
     
   }
+}
