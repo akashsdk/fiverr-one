@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react';
 import '../Style/AboutUs.css';
 
 export default function AboutUs() {
+ 
+
+  
   return (
-    <div className='aboutBody'>AboutUs</div>
+    <div className='aboutBody'>
+      
+    </div>
   )
 }
