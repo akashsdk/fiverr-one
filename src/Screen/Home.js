@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../Style/Home.css";
 
-import { Image, Button, Radio, Drawer, Input, Space } from "antd";
+import { Image, Button, Radio, Drawer, Input, Space, Tooltip } from "antd";
 
-import { CloseOutlined } from "@ant-design/icons";
+import { CloseOutlined, LeftOutlined, RightOutlined } from "@ant-design/icons";
 
 export default function Home() {
   const [activeBox, setActiveBox] = useState(1);
@@ -42,6 +42,17 @@ export default function Home() {
   };
   const onClose3 = () => {
     setOpen3(false);
+  };
+
+  const showDrawerEdu = () => {
+    setOpen2(true);
+    setOpen(false);
+  };
+
+  const showDrawer3Edu = () => {
+    setOpen3(true);
+    setOpen(false);
+
   };
 
   return (
@@ -98,6 +109,7 @@ export default function Home() {
               </Radio.Button>
             </Radio.Group>
           </div>
+          {/* Education Drawer */}
           <Drawer
             placement="left"
             closable={false}
@@ -112,26 +124,78 @@ export default function Home() {
               marginTop: "5vh",
             }}
           >
-            <div>
-              <Button
-                style={{
-                  backgroundColor: "transparent",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  border: "none",
-                }}
-                onClick={onClose}
-                shape="circle"
-                icon={<CloseOutlined style={{ fontSize: "20px" }} />}
-                danger
-              />
+            <div className="hDrawer-Body">
+              <div className="hDrawer-Top-Box">
+                <Button
+                  style={{
+                    backgroundColor: "transparent",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    boxShadow: " rgb(255, 32, 32) 0px 2px 16px 0px",
+                  }}
+                  onClick={onClose}
+                  shape="circle"
+                  icon={<CloseOutlined style={{ fontSize: "20px" }} />}
+                  danger
+                />
+              </div>
+              <div className="df">
+                <Tooltip title="Skills">
+                  <Button
+                    onClick={showDrawerEdu}
+                    shape="circle"
+                    icon={<LeftOutlined />}
+                  />
+                </Tooltip>
+
+                <div className="hDrawer-Heder">
+                  <p className="home-box2-1-MainText">Education</p>
+                  <div className="home-box1D-line" />
+                </div>
+                <Tooltip title="Experience">
+                  <Button
+                    onClick={showDrawer3Edu}
+                    shape="circle"
+                    icon={<RightOutlined />}
+                  />
+                </Tooltip>
+              </div>
+              <div style={{ height: "500px", overflow: "auto" }}>
+                <div className="hDrawer-Div">
+                  <div className="HomeSlid-box2">
+                    <p className="HomeSlid-box2-Text1">What I Do, For You!</p>
+                    <div style={{ margin: "20px", marginTop: "-25px" }}>
+                      <p className="HomeSlid-box2-Text">
+                        I help ambitious businesses like yours generate more
+                        profits by building awareness, driving web traffic,
+                        connecting with customers and growing overall sales.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="HomeSlid-box3" />
+                </div>
+
+
+                <div className="hDrawer-Div">
+                  <div className="HomeSlid-box2">
+                    
+                    <p className="HomeSlid-box2-Text1">What I Do, For You!</p>
+                    <div style={{ margin: "20px", marginTop: "-25px" }}>
+                      <p className="HomeSlid-box2-Text">
+                        I help ambitious businesses like yours generate more
+                        profits by building awareness, driving web traffic,
+                        connecting with customers and growing overall sales.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="HomeSlid-box3" />
+                </div>
+              </div>
             </div>
-            <p>Education</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
           </Drawer>
 
+          {/* Skills Drawer */}
           <Drawer
             placement="left"
             closable={false}
@@ -146,26 +210,77 @@ export default function Home() {
               marginTop: "5vh",
             }}
           >
-            <div>
-              <Button
-                style={{
-                  backgroundColor: "transparent",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  border: "none",
-                }}
-                onClick={onClose2}
-                shape="circle"
-                icon={<CloseOutlined style={{ fontSize: "20px" }} />}
-                danger
-              />
-            </div>
-            <p>Skills</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-          </Drawer>
+            <div className="hDrawer-Body">
+              <div className="hDrawer-Top-Box">
+                <Button
+                  style={{
+                    backgroundColor: "transparent",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    boxShadow: " rgb(255, 32, 32) 0px 2px 16px 0px",
+                  }}
+                  onClick={onClose2}
+                  shape="circle"
+                  icon={<CloseOutlined style={{ fontSize: "20px" }} />}
+                  danger
+                />
+              </div>
+              <div className="df">
+                <Tooltip title="Education">
+                  <Button
+                    onClick={showDrawer}
+                    shape="circle"
+                    icon={<LeftOutlined />}
+                  />
+                </Tooltip>
 
+                <div className="hDrawer-Heder">
+                  <p className="home-box2-1-MainText"> Skills</p>
+                  <div className="home-box1D-line" />
+                </div>
+                <Tooltip title="Experience">
+                  <Button
+                    onClick={showDrawer3}
+                    shape="circle"
+                    icon={<RightOutlined />}
+                  />
+                </Tooltip>
+              </div>
+              <div style={{ height: "500px", overflow: "auto" }}>
+                <div className="hDrawer-Div">
+                  <div className="HomeSlid-box2">
+                    <p className="HomeSlid-box2-Text1">What I Do, For You!</p>
+                    <div style={{ margin: "20px", marginTop: "-25px" }}>
+                      <p className="HomeSlid-box2-Text">
+                        I help ambitious businesses like yours generate more
+                        profits by building awareness, driving web traffic,
+                        connecting with customers and growing overall sales.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="HomeSlid-box3" />
+                </div>
+
+
+                <div className="hDrawer-Div">
+                  <div className="HomeSlid-box2">
+                    
+                    <p className="HomeSlid-box2-Text1">What I Do, For You!</p>
+                    <div style={{ margin: "20px", marginTop: "-25px" }}>
+                      <p className="HomeSlid-box2-Text">
+                        I help ambitious businesses like yours generate more
+                        profits by building awareness, driving web traffic,
+                        connecting with customers and growing overall sales.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="HomeSlid-box3" />
+                </div>
+              </div>
+            </div>
+          </Drawer>
+          {/* Experience Drawer */}
           <Drawer
             placement="left"
             closable={false}
@@ -199,6 +314,7 @@ export default function Home() {
             <p>Some contents...</p>
             <p>Some contents...</p>
           </Drawer>
+          {/* Drawer End*/}
         </div>
       </div>
       <div className="home-box2">
@@ -295,7 +411,7 @@ export default function Home() {
               ></button>
             </div>
           </div>
-          <div style={{marginTop:'40px'}}>
+          <div style={{ marginTop: "40px" }}>
             <p className="home-box2-1-MainText">Want To Hire Me?</p>
             <p className="HomeSlid-box2-DText">If You Like My Work</p>
             <Space.Compact
@@ -304,7 +420,11 @@ export default function Home() {
               }}
             >
               <Input placeholder="enter your email" size="large" />
-              <Button type="primary" size="large" style={{backgroundColor:'rgb(116, 32, 250)'}}>
+              <Button
+                type="primary"
+                size="large"
+                style={{ backgroundColor: "rgb(116, 32, 250)" }}
+              >
                 Hire Me
               </Button>
             </Space.Compact>

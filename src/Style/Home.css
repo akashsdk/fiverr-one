@@ -145,6 +145,32 @@
   margin-top: 0px;
 }
 
+.hDrawer-Body{
+  height: auto;
+  width: 100%;
+}
+.hDrawer-Top-Box{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+
+}
+.hDrawer-Heder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+.hDrawer-Div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
 @media only screen and (max-width: 1000px) {
   .homeBody {
     flex-direction: column;
