@@ -1,4 +1,71 @@
 .aboutBody{
     height: calc(100vh - 70px);
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.aboutBox-1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutBox-2{
+    height: 40px;
+    width: 100px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutBox-3{
+    height: 40px;
+    width: 300px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutBox-4{
+    height: 70px;
+    width: 100px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutBox-5{
+    height: 70px;
+    width: 300px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutBox-input{
+    height: 38px;
+    border: none;
+    width: 295px;
+}
+
+.aboutBox-Button{
+    font-size: 30px;
+    background-color: aqua;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
 }

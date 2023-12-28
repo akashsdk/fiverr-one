@@ -52,7 +52,24 @@ export default function Home() {
   const showDrawer3Edu = () => {
     setOpen3(true);
     setOpen(false);
+  };
 
+  const showDrawerSki = () => {
+    setOpen(true);
+    setOpen2(false);
+  };
+  const showDrawer3Ski = () => {
+    setOpen3(true);
+    setOpen2(false);
+  };
+
+  const showDrawer2Exp = () => {
+    setOpen2(true);
+    setOpen3(false);
+  };
+  const showDrawerExp = () => {
+    setOpen(true);
+    setOpen3(false);
   };
 
   return (
@@ -176,10 +193,8 @@ export default function Home() {
                   <div className="HomeSlid-box3" />
                 </div>
 
-
                 <div className="hDrawer-Div">
                   <div className="HomeSlid-box2">
-                    
                     <p className="HomeSlid-box2-Text1">What I Do, For You!</p>
                     <div style={{ margin: "20px", marginTop: "-25px" }}>
                       <p className="HomeSlid-box2-Text">
@@ -229,7 +244,7 @@ export default function Home() {
               <div className="df">
                 <Tooltip title="Education">
                   <Button
-                    onClick={showDrawer}
+                    onClick={showDrawerSki}
                     shape="circle"
                     icon={<LeftOutlined />}
                   />
@@ -241,7 +256,7 @@ export default function Home() {
                 </div>
                 <Tooltip title="Experience">
                   <Button
-                    onClick={showDrawer3}
+                    onClick={showDrawer3Ski}
                     shape="circle"
                     icon={<RightOutlined />}
                   />
@@ -262,10 +277,8 @@ export default function Home() {
                   <div className="HomeSlid-box3" />
                 </div>
 
-
                 <div className="hDrawer-Div">
                   <div className="HomeSlid-box2">
-                    
                     <p className="HomeSlid-box2-Text1">What I Do, For You!</p>
                     <div style={{ margin: "20px", marginTop: "-25px" }}>
                       <p className="HomeSlid-box2-Text">
@@ -295,24 +308,73 @@ export default function Home() {
               marginTop: "5vh",
             }}
           >
-            <div>
-              <Button
-                style={{
-                  backgroundColor: "transparent",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  border: "none",
-                }}
-                onClick={onClose3}
-                shape="circle"
-                icon={<CloseOutlined style={{ fontSize: "20px" }} />}
-                danger
-              />
+            <div className="hDrawer-Body">
+              <div className="hDrawer-Top-Box">
+                <Button
+                  style={{
+                    backgroundColor: "transparent",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    boxShadow: " rgb(255, 32, 32) 0px 2px 16px 0px",
+                  }}
+                  onClick={onClose3}
+                  shape="circle"
+                  icon={<CloseOutlined style={{ fontSize: "20px" }} />}
+                  danger
+                />
+              </div>
+              <div className="df">
+                <Tooltip title="Education">
+                  <Button
+                    onClick={showDrawerExp}
+                    shape="circle"
+                    icon={<LeftOutlined />}
+                  />
+                </Tooltip>
+
+                <div className="hDrawer-Heder">
+                  <p className="home-box2-1-MainText"> Experience</p>
+                  <div className="home-box1D-line" />
+                </div>
+                <Tooltip title="Skills">
+                  <Button
+                    onClick={showDrawer2Exp}
+                    shape="circle"
+                    icon={<RightOutlined />}
+                  />
+                </Tooltip>
+              </div>
+              <div style={{ height: "500px", overflow: "auto" }}>
+                <div className="hDrawer-Div">
+                  <div className="HomeSlid-box2">
+                    <p className="HomeSlid-box2-Text1">What I Do, For You!</p>
+                    <div style={{ margin: "20px", marginTop: "-25px" }}>
+                      <p className="HomeSlid-box2-Text">
+                        I help ambitious businesses like yours generate more
+                        profits by building awareness, driving web traffic,
+                        connecting with customers and growing overall sales.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="HomeSlid-box3" />
+                </div>
+
+                <div className="hDrawer-Div">
+                  <div className="HomeSlid-box2">
+                    <p className="HomeSlid-box2-Text1">What I Do, For You!</p>
+                    <div style={{ margin: "20px", marginTop: "-25px" }}>
+                      <p className="HomeSlid-box2-Text">
+                        I help ambitious businesses like yours generate more
+                        profits by building awareness, driving web traffic,
+                        connecting with customers and growing overall sales.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="HomeSlid-box3" />
+                </div>
+              </div>
             </div>
-            <p>Experience</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
           </Drawer>
           {/* Drawer End*/}
         </div>
