@@ -36,6 +36,7 @@
   height: calc(100vh - 70px);
 }
 .home-box2-1-MainText{
+  margin-top: 0px;
   font-size: 30px;
   color: rgb(116, 32, 250);
   margin-bottom: 0px;
@@ -137,6 +138,11 @@
 }
 .home-deactive-button:hover {
   border: 0.5px solid red;
+}
+.HomeSlid-box2-DText{
+  opacity: .6;
+  text-align: center;
+  margin-top: 0px;
 }
 
 @media only screen and (max-width: 1000px) {

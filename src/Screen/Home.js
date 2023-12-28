@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../Style/Home.css";
 
-import { Image, Button, Radio, Drawer } from "antd";
+import { Image, Button, Radio, Drawer, Input, Space } from "antd";
 
-import {CloseOutlined} from "@ant-design/icons";
+import { CloseOutlined } from "@ant-design/icons";
 
 export default function Home() {
   const [activeBox, setActiveBox] = useState(1);
@@ -64,12 +64,38 @@ export default function Home() {
             night.
           </p>
           <div>
-            <Radio.Group size="large" style={{marginTop:'25px'}}>
-              <Radio.Button value="large" onClick={showDrawer} style={{color:'rgb(116, 32, 250)', borderColor:'rgb(116, 32, 250)'}}>
-              Education
+            <Radio.Group size="large" style={{ marginTop: "25px" }}>
+              <Radio.Button
+                value="large"
+                onClick={showDrawer}
+                style={{
+                  color: "rgb(116, 32, 250)",
+                  borderColor: "rgb(116, 32, 250)",
+                }}
+              >
+                Education
               </Radio.Button>
-              <Radio.Button value="default" onClick={showDrawer2} style={{color:'rgb(116, 32, 250)', borderColor:'rgb(116, 32, 250)'}}>Skills</Radio.Button>
-              <Radio.Button value="small" onClick={showDrawer3} style={{color:'rgb(116, 32, 250)', borderColor:'rgb(116, 32, 250)'}}> Experience</Radio.Button>
+              <Radio.Button
+                value="default"
+                onClick={showDrawer2}
+                style={{
+                  color: "rgb(116, 32, 250)",
+                  borderColor: "rgb(116, 32, 250)",
+                }}
+              >
+                Skills
+              </Radio.Button>
+              <Radio.Button
+                value="small"
+                onClick={showDrawer3}
+                style={{
+                  color: "rgb(116, 32, 250)",
+                  borderColor: "rgb(116, 32, 250)",
+                }}
+              >
+                {" "}
+                Experience
+              </Radio.Button>
             </Radio.Group>
           </div>
           <Drawer
@@ -78,28 +104,28 @@ export default function Home() {
             onClose={onClose}
             open={open}
             key="left"
-            width={'90%'}
+            width={"90%"}
             style={{
-              marginLeft:'5%',
-              borderRadius:'20px',
-              height:'90vh',
-              marginTop:'5vh'
+              marginLeft: "5%",
+              borderRadius: "20px",
+              height: "90vh",
+              marginTop: "5vh",
             }}
           >
             <div>
-            <Button
-              style={{
-                backgroundColor: "transparent",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                border:'none',
-              }}
-              onClick={onClose}
-              shape="circle"
-              icon={<CloseOutlined style={{ fontSize: "20px" }} />}
-              danger
-            />
+              <Button
+                style={{
+                  backgroundColor: "transparent",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  border: "none",
+                }}
+                onClick={onClose}
+                shape="circle"
+                icon={<CloseOutlined style={{ fontSize: "20px" }} />}
+                danger
+              />
             </div>
             <p>Education</p>
             <p>Some contents...</p>
@@ -112,28 +138,28 @@ export default function Home() {
             onClose={onClose2}
             open={open2}
             key="left"
-            width={'90%'}
+            width={"90%"}
             style={{
-              marginLeft:'5%',
-              borderRadius:'20px',
-              height:'90vh',
-              marginTop:'5vh'
+              marginLeft: "5%",
+              borderRadius: "20px",
+              height: "90vh",
+              marginTop: "5vh",
             }}
           >
             <div>
-            <Button
-              style={{
-                backgroundColor: "transparent",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                border:'none',
-              }}
-              onClick={onClose2}
-              shape="circle"
-              icon={<CloseOutlined style={{ fontSize: "20px" }} />}
-              danger
-            />
+              <Button
+                style={{
+                  backgroundColor: "transparent",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  border: "none",
+                }}
+                onClick={onClose2}
+                shape="circle"
+                icon={<CloseOutlined style={{ fontSize: "20px" }} />}
+                danger
+              />
             </div>
             <p>Skills</p>
             <p>Some contents...</p>
@@ -146,28 +172,28 @@ export default function Home() {
             onClose={onClose3}
             open={open3}
             key="left"
-            width={'90%'}
+            width={"90%"}
             style={{
-              marginLeft:'5%',
-              borderRadius:'20px',
-              height:'90vh',
-              marginTop:'5vh'
+              marginLeft: "5%",
+              borderRadius: "20px",
+              height: "90vh",
+              marginTop: "5vh",
             }}
           >
             <div>
-            <Button
-              style={{
-                backgroundColor: "transparent",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                border:'none',
-              }}
-              onClick={onClose3}
-              shape="circle"
-              icon={<CloseOutlined style={{ fontSize: "20px" }} />}
-              danger
-            />
+              <Button
+                style={{
+                  backgroundColor: "transparent",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  border: "none",
+                }}
+                onClick={onClose3}
+                shape="circle"
+                icon={<CloseOutlined style={{ fontSize: "20px" }} />}
+                danger
+              />
             </div>
             <p>Experience</p>
             <p>Some contents...</p>
@@ -176,20 +202,19 @@ export default function Home() {
         </div>
       </div>
       <div className="home-box2">
-        <div style={{ height: "50px" }} />
         <div className="df">
           <Image
-            width={120}
+            width={100}
             src="https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630_640.png"
           />
           <div style={{ width: "50px" }} />
           <Image
-            width={150}
+            width={130}
             src="https://cdni.iconscout.com/illustration/premium/thumb/web-development-team-working-on-website-launch-5691625-4759507.png"
           />
           <div style={{ width: "50px" }} />
           <Image
-            width={150}
+            width={130}
             src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703462400&semt=ais"
           />
         </div>
@@ -269,6 +294,20 @@ export default function Home() {
                 }
               ></button>
             </div>
+          </div>
+          <div style={{marginTop:'40px'}}>
+            <p className="home-box2-1-MainText">Want To Hire Me?</p>
+            <p className="HomeSlid-box2-DText">If You Like My Work</p>
+            <Space.Compact
+              style={{
+                width: "85%",
+              }}
+            >
+              <Input placeholder="enter your email" size="large" />
+              <Button type="primary" size="large" style={{backgroundColor:'rgb(116, 32, 250)'}}>
+                Hire Me
+              </Button>
+            </Space.Compact>
           </div>
         </div>
       </div>
