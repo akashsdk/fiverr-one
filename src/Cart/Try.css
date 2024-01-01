@@ -1,0 +1,11 @@
+.tryBody{
+    height: 400px;
+    width: 250px;
+    box-shadow: 1px 0px 3px 1px black;
+    margin: 20px;
+    border-radius: 10px;
+}
+.tryImg{
+    height: 200px;
+    border-radius: 10px;
+}
