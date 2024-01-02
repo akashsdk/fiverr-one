@@ -21,6 +21,7 @@ export default function AboutUs() {
         ok='name: '
         ardd="gchjkl jnbgvuj jhvytfgiuhk hkbugcybkj khb"
       />
+      <Try />
     </div>
   );
 }

@@ -9,6 +9,7 @@ import Contact from './Screen/Contact.js';
 import Footer from "./Component/Footer.js";
 import Header from './Component/Header.js';
 import Portfolio from "./Screen/Portfolio.js";
+import Index from "./Screen/Index.js";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/About-Us" element={<AboutUs />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Portfolio" element={<Portfolio />} />
+          <Route path="/Index" element={<Index />} />
         </Routes>
         <Footer/>
       </div>
